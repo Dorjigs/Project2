@@ -5,4 +5,4 @@ const prisma = new PrismaClient({
   errorFormat: 'minimal',
 });
 
-export default prisma
+export { prisma }

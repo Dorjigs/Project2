@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { signIn } from 'next-auth/react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-export default function SignIn() {
+function SignInContent() {
   const [isLogin, setIsLogin] = useState(true);
   const [error, setError] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -214,5 +214,13 @@ export default function SignIn() {
 
       <Footer />
     </main>
+  );
+}
+
+export default function SignIn() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SignInContent />
+    </Suspense>
   );
 }

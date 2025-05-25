@@ -12,6 +12,9 @@ const CITIES = {
   bumthang: { lat: 27.6424, lon: 90.8871 },
 };
 
+// Add dynamic configuration
+export const dynamic = 'force-dynamic';
+
 export async function GET(request) {
   try {
     const { searchParams } = new URL(request.url);
