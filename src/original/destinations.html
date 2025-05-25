@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Discover Bhutan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Bhutan Travel Logo" height="40">
+                Discover Bhutan
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="adventure.html">Adventures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="traveltips.html">Travel-Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="budget.html">Expenses-Guide</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="destination-hero vh-100">
+        <div class="overlay"></div>
+        <div class="container text-center hero-content">
+            <h1 class="display-4 text-white">Discover Bhutan's Hidden Treasures</h1>
+            <p class="lead text-white mb-4">From ancient monasteries to pristine valleys</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="#destinations" class="btn btn-outline-light btn-lg scroll-down">
+                Explore Destinations <i class="fas fa-chevron-down ms-2"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="container my-5">
+        <div class="row g-4">
+            <!-- Paro -->
+            <div class="col-md-6" id="paro">
+                <div class="destination-card card h-100 border-0 shadow-sm">
+                    <img src="taktshang.jpg" class="card-img-top" alt="Paro Taktsang">
+                    <div class="card-body">
+                        <h3 class="card-title">Paro <i class="fas fa-mountain text-primary"></i></h3>
+                        <div class="mb-3">
+                            <h5 class="text-primary">Highlights:</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-landmark me-2"></i>Tiger's Nest Monastery</li>
+                                <li><i class="fas fa-museum me-2"></i>National Museum</li>
+                                <li><i class="fas fa-fort-awesome me-2"></i>Rinpung Dzong</li>
+                            </ul>
+                        </div>
+                        <p class="card-text">Home to the iconic cliffside monastery and Bhutan's only international airport.</p>
+                        <a href="https://www.tourism.gov.bt/attraction/paro-taktsang" class="btn btn-primary w-100" target="_blank">
+                            Learn More <i class="fas fa-external-link-alt ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thimphu -->
+            <div class="col-md-6" id="thimphu">
+                <div class="destination-card card h-100 border-0 shadow-sm">
+                    <img src="buddha-point.jpg" class="card-img-top" alt="Buddha Dordenma">
+                    <div class="card-body">
+                        <h3 class="card-title">Thimphu <i class="fas fa-city text-primary"></i></h3>
+                        <div class="mb-3">
+                            <h5 class="text-primary">Highlights:</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-buddha me-2"></i>Buddha Dordenma</li>
+                                <li><i class="fas fa-landmark me-2"></i>Tashichho Dzong</li>
+                                <li><i class="fas fa-history me-2"></i>Folk Heritage Museum</li>
+                            </ul>
+                        </div>
+                        <p class="card-text">The capital city blends tradition with modernity.</p>
+                        <a href="https://www.tourism.gov.bt/destination/thimphu" class="btn btn-primary w-100" target="_blank">
+                            Learn More <i class="fas fa-external-link-alt ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Punakha -->
+            <div class="col-md-6" id="punakha">
+                <div class="destination-card card h-100 border-0 shadow-sm">
+                    <img src="punakha.jpg" class="card-img-top" alt="Punakha Dzong">
+                    <div class="card-body">
+                        <h3 class="card-title">Punakha <i class="fas fa-water text-primary"></i></h3>
+                        <div class="mb-3">
+                            <h5 class="text-primary">Highlights:</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-landmark me-2"></i>Punakha Dzong</li>
+                                <li><i class="fas fa-bridge me-2"></i>Suspension Bridge</li>
+                                <li><i class="fas fa-pray me-2"></i>Chimi Lhakhang</li>
+                            </ul>
+                        </div>
+                        <p class="card-text">Known for its stunning riverside dzong and warm climate, especially beautiful during jacaranda bloom.</p>
+                        <a href="https://www.tourism.gov.bt/attraction/punakha-dzong" class="btn btn-primary w-100" target="_blank">
+                            Learn More <i class="fas fa-external-link-alt ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phobjikha Valley -->
+            <div class="col-md-6" id="phobjikha">
+                <div class="destination-card card h-100 border-0 shadow-sm">
+                    <img src="phobjikha.jpg" class="card-img-top" alt="Phobjikha Valley">
+                    <div class="card-body">
+                        <h3 class="card-title">Phobjikha Valley <i class="fas fa-dove text-primary"></i></h3>
+                        <div class="mb-3">
+                            <h5 class="text-primary">Highlights:</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-feather-alt me-2"></i>Black-Necked Crane Center</li>
+                                <li><i class="fas fa-landmark me-2"></i>Gangtey Monastery</li>
+                                <li><i class="fas fa-mountain me-2"></i>Nature Trails</li>
+                            </ul>
+                        </div>
+                        <p class="card-text">A glacial valley famous for its natural beauty and rare black-necked cranes.</p>
+                        <a href="https://www.tourism.gov.bt/attraction/phobjikha-valley" class="btn btn-primary w-100" target="_blank">
+                            Learn More <i class="fas fa-external-link-alt ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bumthang Valley -->
+            <div class="col-md-6" id="bumthang">
+                <div class="destination-card card h-100 border-0 shadow-sm">
+                    <img src="bumthang.jpg" class="card-img-top" alt="Bumthang Valley">
+                    <div class="card-body">
+                        <h3 class="card-title">Bumthang Valley <i class="fas fa-pray text-primary"></i></h3>
+                        <div class="mb-3">
+                            <h5 class="text-primary">Highlights:</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-landmark me-2"></i>Jakar Dzong</li>
+                                <li><i class="fas fa-temple me-2"></i>Kurje Lhakhang</li>
+                                <li><i class="fas fa-water me-2"></i>Burning Lake (Mebar Tsho)</li>
+                            </ul>
+                        </div>
+                        <p class="card-text">The spiritual heartland of Bhutan, with sacred sites and beautiful landscapes.</p>
+                        <a href="https://www.tourism.gov.bt/destination/bumthang" class="btn btn-primary w-100" target="_blank">
+                            Learn More <i class="fas fa-external-link-alt ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Haa Valley -->
+            <div class="col-md-6" id="haa">
+                <div class="destination-card card h-100 border-0 shadow-sm">
+                    <img src="haa.jpg" class="card-img-top" alt="Haa Valley">
+                    <div class="card-body">
+                        <h3 class="card-title">Haa Valley <i class="fas fa-hiking text-primary"></i></h3>
+                        <div class="mb-3">
+                            <h5 class="text-primary">Highlights:</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-temple me-2"></i>Lhakhang Karpo & Nagpo</li>
+                                <li><i class="fas fa-mountain me-2"></i>Chelela Pass</li>
+                                <li><i class="fas fa-tree me-2"></i>Alpine Landscapes</li>
+                            </ul>
+                        </div>
+                        <p class="card-text">A hidden gem known for its untouched beauty and fewer tourists.</p>
+                        <a href="https://www.tourism.gov.bt/destination/haa" class="btn btn-primary w-100" target="_blank">
+                            Learn More <i class="fas fa-external-link-alt ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trongsa -->
+            <div class="col-md-6" id="trongsa">
+                <div class="destination-card card h-100 border-0 shadow-sm">
+                    <img src="trongsadz.jpg" class="card-img-top" alt="Trongsa Dzong">
+                    <div class="card-body">
+                        <h3 class="card-title">Trongsa <i class="fas fa-crown text-primary"></i></h3>
+                        <div class="mb-3">
+                            <h5 class="text-primary">Highlights:</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-landmark me-2"></i>Trongsa Dzong</li>
+                                <li><i class="fas fa-museum me-2"></i>Tower of Trongsa Museum</li>
+                                <li><i class="fas fa-mountain me-2"></i>Panoramic Views</li>
+                            </ul>
+                        </div>
+                        <p class="card-text">Historically significant as the seat of Bhutan's royal family, offering panoramic views.</p>
+                        <a href="https://www.tourism.gov.bt/attraction/trongsa-dzong" class="btn btn-primary w-100" target="_blank">
+                            Learn More <i class="fas fa-external-link-alt ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lhuentse -->
+            <div class="col-md-6" id="lhuentse">
+                <div class="destination-card card h-100 border-0 shadow-sm">
+                    <img src="lhuentsedz.jpg" class="card-img-top" alt="Lhuentse">
+                    <div class="card-body">
+                        <h3 class="card-title">Lhuentse <i class="fas fa-scroll text-primary"></i></h3>
+                        <div class="mb-3">
+                            <h5 class="text-primary">Highlights:</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-home me-2"></i>Khoma Village</li>
+                                <li><i class="fas fa-landmark me-2"></i>Lhuentse Dzong</li>
+                                <li><i class="fas fa-fiber me-2"></i>Traditional Weaving</li>
+                            </ul>
+                        </div>
+                        <p class="card-text">Remote and traditional, perfect for cultural immersion and authentic Bhutanese life.</p>
+                        <a href="https://www.tourism.gov.bt/destination/lhuentse" class="btn btn-primary w-100" target="_blank">
+                            Learn More <i class="fas fa-external-link-alt ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

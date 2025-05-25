@@ -1,0 +1,33 @@
+// schema.prisma
+
+datasource db {
+  provider = "postgresql" // or your DB provider
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Travel Guide model
+model TravelGuide {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  createdAt   DateTime @default(now())
+  
+  // If you want blogs to relate to guides, define relation here (optional)
+  blogs       Blog[]
+}
+
+// Blog model
+model Blog {
+  id          String   @id @default(cuid())
+  title       String
+  content     String
+  createdAt   DateTime @default(now())
+
+  // If blog relates to a guide:
+  guideId     String?
+  guide       TravelGuide? @relation(fields: [guideId], references: [id])
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Bhutan - Land of the Thunder Dragon</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" alt="Bhutan Travel Logo" height="40">
+            Discover Bhutan
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destinations.html">Destinations</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="adventure.html">Adventures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="traveltips.html">Travel-Tips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="budget.html">Expenses-Guide</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section" style="background-image: url('homepagebg.jpg')">
+    <div class="overlay"></div>
+    <div class="container text-center hero-content">
+      <h1 class="display-3 text-white">Discover Bhutan</h1>
+      <p class="lead text-white">Land of the Thunder Dragon</p>
+      <div class="mt-4">
+        <a href="destinations.html" class="btn btn-primary btn-lg me-2">Explore Destinations</a>
+        <a href="traveltips.html" class="btn btn-outline-light btn-lg">Travel Tips</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Welcome Section -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="section-title">Welcome to Bhutan</h2>
+        <p class="lead">Experience the magic of the last Himalayan kingdom.</p>
+        <p>Nestled in the eastern Himalayas between India and China, Bhutan is a land of stunning natural beauty, rich cultural heritage, and spiritual significance. Known for its commitment to Gross National Happiness over Gross National Product, Bhutan offers travelers a unique glimpse into a country that prioritizes cultural preservation and environmental conservation.</p>
+        <p>Our comprehensive guide helps you discover ancient fortresses (dzongs), Buddhist monasteries perched on cliffs, pristine landscapes, and vibrant festivals that bring Bhutan's cultural heritage to life.</p>
+        <a href="https://bhutan.travel/visit" class="btn btn-outline-primary">Learn More About Bhutan</a>
+      </div>
+      <div class="col-lg-6">
+        <div class="welcome-image">
+          <img src="welcomebg.jpg" class="img-fluid rounded shadow" alt="Paro Tiger's Nest">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Destinations -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Featured Destinations</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card destination-card h-100">
+            <img src="taktshang.jpg" class="card-img-top" alt="Paro Tiger's Nest">
+            <div class="card-body">
+              <h5 class="card-title">Paro</h5>
+              <p class="card-text">Home to the iconic Tiger's Nest Monastery (Taktsang), perched dramatically on a cliffside 900 meters above the valley floor.</p>
+              <a href="destinations.html#paro" class="btn btn-sm btn-primary">Explore Paro</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card destination-card h-100">
+            <img src="buddha-point.jpg" class="card-img-top" alt="Thimphu Buddha Point">
+            <div class="card-body">
+              <h5 class="card-title">Thimphu</h5>
+              <p class="card-text">Bhutan's capital offers a blend of tradition and modernity with the massive Buddha Dordenma statue and Tashichho Dzong.</p>
+              <a href="destinations.html#thimphu" class="btn btn-sm btn-primary">Explore Thimphu</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card destination-card h-100">
+            <img src="punakha.jpg" class="card-img-top" alt="Punakha Dzong">
+            <div class="card-body">
+              <h5 class="card-title">Punakha</h5>
+              <p class="card-text">Known for its majestic Punakha Dzong, situated at the confluence of the Pho Chhu and Mo Chhu rivers.</p>
+              <a href="destinations.html#punakha" class="btn btn-sm btn-primary">Explore Punakha</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="destinations.html" class="btn btn-primary">View All Destinations</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Culture & Festivals -->
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6 order-lg-2">
+        <h2 class="section-title">Culture & Festivals</h2>
+        <p>Bhutan's rich cultural heritage is evident in its architecture, festivals, arts, and daily life. Experience the vibrant Tshechu festivals featuring colorful mask dances, visit ancient monasteries, and witness traditional arts and crafts.</p>
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <span class="badge bg-secondary">Tshechu Festivals</span>
+          <span class="badge bg-secondary">Buddhism</span>
+          <span class="badge bg-secondary">Traditional Arts</span>
+          <span class="badge bg-secondary">Architecture</span>
+          <span class="badge bg-secondary">Local Customs</span>
+        </div>
+        <a href="https://www.drukasia.com/blog/bhutanese-culture/" class="btn btn-outline-primary">Explore Bhutanese Culture</a>
+      </div>
+      <div class="col-lg-6 order-lg-1 mt-4 mt-lg-0">
+        <div class="cultural-image-carousel">
+          <div id="culturalCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#culturalCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#culturalCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#culturalCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner rounded shadow">
+              <div class="carousel-item active">
+                <img src="bfestival.jpg" class="d-block w-100" alt="Bhutanese Festival">
+              </div>
+              <div class="carousel-item">
+                <img src="tarts.jpg" class="d-block w-100" alt="Traditional Art">
+              </div>
+              <div class="carousel-item">
+                <img src="monastry.jpg" class="d-block w-100" alt="Monastery">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adventure Section -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Adventure Awaits</h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-6">
+          <div class="adventure-card text-center">
+            <div class="adventure-icon mb-3">
+              <i class="fas fa-hiking fa-3x"></i>
+            </div>
+            <h5>Trekking</h5>
+            <p class="small">From the challenging Snowman Trek to easier day hikes</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="adventure-card text-center">
+            <div class="adventure-icon mb-3">
+              <i class="fas fa-mountain fa-3x"></i>
+            </div>
+            <h5>Mountain Biking</h5>
+            <p class="small">Ride through scenic valleys and mountain trails</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="adventure-card text-center">
+            <div class="adventure-icon mb-3">
+              <i class="fas fa-water fa-3x"></i>
+            </div>
+            <h5>River Rafting</h5>
+            <p class="small">Navigate the rapids of Bhutan's pristine rivers</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="adventure-card text-center">
+            <div class="adventure-icon mb-3">
+              <i class="fas fa-camera fa-3x"></i>
+            </div>
+            <h5>Photography</h5>
+            <p class="small">Capture breathtaking landscapes and cultural moments</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="adventure.html" class="btn btn-primary">Explore Adventures</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Tips Highlight -->
+  <section class="container my-5">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="card border-0 shadow h-100">
+          <div class="card-body">
+            <h2 class="section-title">Essential Travel Tips</h2>
+            <p>Planning a trip to Bhutan requires knowledge of its unique travel policies and requirements.</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item ps-0"><i class="fas fa-check-circle text-success me-2"></i> All tourists must obtain a visa and book through licensed tour operators</li>
+              <li class="list-group-item ps-0"><i class="fas fa-check-circle text-success me-2"></i> Daily tourist tariff covers accommodations, meals, guide, and internal transport</li>
+              <li class="list-group-item ps-0"><i class="fas fa-check-circle text-success me-2"></i> Best seasons to visit: Spring (Mar-May) and Autumn (Sep-Nov)</li>
+              <li class="list-group-item ps-0"><i class="fas fa-check-circle text-success me-2"></i> Pack for varying climates and altitudes</li>
+            </ul>
+            <a href="traveltips.html" class="btn btn-outline-primary mt-3">View All Travel Tips</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card border-0 shadow h-100">
+          <div class="card-body">
+            <h2 class="section-title">Budget Planning</h2>
+            <p>Understanding the costs associated with traveling to Bhutan helps you plan effectively.</p>
+            <div class="budget-highlights">
+              <div class="d-flex justify-content-between border-bottom py-2">
+                <span>Daily Tourist Tariff</span>
+                <span class="fw-bold">$200-$250 USD</span>
+              </div>
+              <div class="d-flex justify-content-between border-bottom py-2">
+                <span>Visa Fee</span>
+                <span class="fw-bold">$40 USD</span>
+              </div>
+              <div class="d-flex justify-content-between border-bottom py-2">
+                <span>Flight to Paro (approx.)</span>
+                <span class="fw-bold">$400-$800 USD</span>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <span>Personal Expenses (daily)</span>
+                <span class="fw-bold">$20-$50 USD</span>
+              </div>
+            </div>
+            <a href="budget.html" class="btn btn-outline-primary mt-3">View Complete Budget Guide</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Testimonials Section -->
+  <section class="container my-5">
+    <h2 class="section-title text-center mb-5">Traveler Experiences</h2>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-card text-center p-4">
+                <div class="testimonial-avatar mb-3">
+                  <img src="images/testimonial1-placeholder.jpg" alt="Traveler" class="rounded-circle">
+                </div>
+                <p class="testimonial-text">"My journey through Bhutan was life-changing. The perfect balance of adventure, spirituality, and cultural immersion. The Tiger's Nest hike was challenging but absolutely worth it for the views!"</p>
+                <h5 class="mb-0">Sarah Johnson</h5>
+                <small class="text-muted">Visited April 2024</small>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card text-center p-4">
+                <div class="testimonial-avatar mb-3">
+                  <img src="michael-chen.jpg" alt="Traveler" class="rounded-circle">
+                </div>
+                <p class="testimonial-text">"Bhutan's commitment to environmental conservation and cultural preservation is inspiring. The daily tariff seemed high initially, but the all-inclusive experience and knowing it supports the country's development was worth every penny."</p>
+                <h5 class="mb-0">Michael Chen</h5>
+                <small class="text-muted">Visited October 2023</small>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Replace the existing Newsletter Section with this code -->
+<section class="newsletter-section py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="text-white">Stay Updated</h2>
+        <p class="text-white mb-4">Subscribe to our newsletter for travel tips, seasonal updates, and exclusive offers.</p>
+        <div class="mt-4">
+          <a href="subscribe.html" class="btn btn-primary btn-lg px-4">Subscribe</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5>Discover Bhutan</h5>
+          <p>Your comprehensive guide to the Land of the Thunder Dragon.</p>
+          <div class="social-links">
+            <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5>Explore</h5>
+          <ul class="list-unstyled">
+            <li><a href="destinations.html" class="text-white">Destinations</a></li>
+            <li><a href="culture.html" class="text-white">Culture</a></li>
+            <li><a href="adventures.html" class="text-white">Adventures</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5>Travel Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="traveltips.html" class="text-white">Travel Tips</a></li>
+            <li><a href="budget.html" class="text-white">Budget Guide</a></li>
+            <li><a href="faq.html" class="text-white">FAQs</a></li>
+            <li><a href="blog.html" class="text-white">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-envelope me-2"></i> 02230124.cst@rub.edu.bt</li>
+            <li><i class="fas fa-phone me-2"></i> +975 77830773</li>
+           
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="small mb-0">&copy; 2025 Discover Bhutan. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="privacy.html" class="text-white small me-3">Privacy Policy</a>
+          <a href="terms.html" class="text-white small">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
