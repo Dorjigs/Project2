@@ -9,5 +9,11 @@
         }
       }
     }
-  ]
+  ],
+  "functions": {
+    "src/app/api/upload/route.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
 } 
