@@ -4,11 +4,9 @@ import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
 import formidable from 'formidable';
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+// Remove the old config export and use the new format
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
 
 export async function POST(req) {
   const form = formidable({ multiples: false });
