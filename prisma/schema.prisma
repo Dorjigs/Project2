@@ -9,6 +9,53 @@ generator client {
   provider = "prisma-client-js"
 }
 
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  password      String?
+  role          String    @default("subscriber")
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  photos        Photo[]
+  photoLikes    PhotoLike[]
+  photoComments PhotoComment[]
+}
+
+model Photo {
+  id          String        @id @default(cuid())
+  title       String
+  description String?
+  imageUrl    String
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  userId      String
+  user        User          @relation(fields: [userId], references: [id])
+  likes       PhotoLike[]
+  comments    PhotoComment[]
+}
+
+model PhotoLike {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  userId    String
+  photoId   String
+  user      User     @relation(fields: [userId], references: [id])
+  photo     Photo    @relation(fields: [photoId], references: [id])
+
+  @@unique([userId, photoId])
+}
+
+model PhotoComment {
+  id        String   @id @default(cuid())
+  comment   String
+  createdAt DateTime @default(now())
+  userId    String
+  photoId   String
+  user      User     @relation(fields: [userId], references: [id])
+  photo     Photo    @relation(fields: [photoId], references: [id])
+}
+
 // Travel Guide model
 model TravelGuide {
   id          String   @id @default(cuid())
