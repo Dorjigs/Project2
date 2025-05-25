@@ -7,7 +7,7 @@ import formidable from 'formidable';
 // Next.js 14 route configuration
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
-export const bodyParser = false;
+export const maxDuration = 10;
 
 export async function POST(req) {
   try {

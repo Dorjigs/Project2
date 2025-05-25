@@ -1,15 +1,8 @@
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next",
-      "config": {
-        "eslint": {
-          "ignoreDuringBuilds": true
-        }
-      }
-    }
-  ],
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
   "functions": {
     "src/app/api/upload/route.js": {
       "memory": 1024,
