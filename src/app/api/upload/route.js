@@ -4,26 +4,38 @@ import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
 import formidable from 'formidable';
 
-// Remove the old config export and use the new format
+// Next.js 14 route configuration
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
+export const bodyParser = false;
 
 export async function POST(req) {
-  const form = formidable({ multiples: false });
-  const uploadDir = path.join(process.cwd(), 'public', 'gallery');
-  await fs.mkdir(uploadDir, { recursive: true });
+  try {
+    const form = formidable({ multiples: false });
+    const uploadDir = path.join(process.cwd(), 'public', 'gallery');
+    await fs.mkdir(uploadDir, { recursive: true });
 
-  return new Promise((resolve, reject) => {
-    form.parse(req, async (err, fields, files) => {
-      if (err) return resolve(NextResponse.json({ error: 'Upload failed' }, { status: 500 }));
-      const file = files.file;
-      if (!file) return resolve(NextResponse.json({ error: 'No file uploaded' }, { status: 400 }));
-      const ext = path.extname(file.originalFilename || file.newFilename || '');
-      const filename = uuidv4() + ext;
-      const dest = path.join(uploadDir, filename);
-      await fs.copyFile(file.filepath, dest);
-      const url = `/gallery/${filename}`;
-      resolve(NextResponse.json({ url }));
+    const [fields, files] = await new Promise((resolve, reject) => {
+      form.parse(req, (err, fields, files) => {
+        if (err) reject(err);
+        resolve([fields, files]);
+      });
     });
-  });
+
+    const file = files.file;
+    if (!file) {
+      return NextResponse.json({ error: 'No file uploaded' }, { status: 400 });
+    }
+
+    const ext = path.extname(file.originalFilename || file.newFilename || '');
+    const filename = uuidv4() + ext;
+    const dest = path.join(uploadDir, filename);
+    await fs.copyFile(file.filepath, dest);
+    const url = `/gallery/${filename}`;
+    
+    return NextResponse.json({ url });
+  } catch (error) {
+    console.error('Upload error:', error);
+    return NextResponse.json({ error: 'Upload failed' }, { status: 500 });
+  }
 } 
